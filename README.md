@@ -1,2 +1,0 @@
-# sanmple
-test
