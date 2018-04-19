@@ -6,8 +6,7 @@
     - name: logdeleto
       file: path={{srd}}
             state=absent
-      
-    - name: IP henkoumae
+    - name: IP henkoumae
       shell: "ifconfig Ethernet124 >> {{srd}}"
       
     - name: IP henkou
