@@ -8,14 +8,11 @@
             state=absent
     - name: IP henkoumae
       shell: "ifconfig Ethernet124 >> {{srd}}"
-      
-    - name: IP henkou
+    - name: IP henkou
       shell: "ifconfig Ethernet124 10.22.9.133"
-
     - name: IP henkougo
       shell: "ifconfig Ethernet124 >> {{srd}}"
     - name: show command
       shell: "show version >> {{srd}}"
-      
     - name: snmp
       shell: "docker exec snmp snmpwalk -v 2c -c public localhost .1.3.6.1.4.1.2021.11.9 >> {{srd}}"
